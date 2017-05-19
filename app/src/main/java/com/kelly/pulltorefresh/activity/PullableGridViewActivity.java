@@ -37,7 +37,7 @@ public class PullableGridViewActivity extends Activity {
     private void initGridView() {
         List<String> items = new ArrayList<String>();
         for (int i = 0; i < 30; i++) {
-            items.add("这里是item " + i);
+            items.add("item " + i);
         }
         MyAdapter adapter = new MyAdapter(this, items);
         gridView.setAdapter(adapter);

@@ -42,13 +42,13 @@ public class MainActivity extends Activity {
      */
     private void initListView() {
         List<String> items = new ArrayList<String>();
-        items.add("可下拉刷新上拉加载的ListView");
-        items.add("可下拉刷新上拉加载的GridView");
-        items.add("可下拉刷新上拉加载的ExpandableListView");
-        items.add("可下拉刷新上拉加载的SrcollView");
-        items.add("可下拉刷新上拉加载的WebView");
-        items.add("可下拉刷新上拉加载的ImageView");
-        items.add("可下拉刷新上拉加载的TextView");
+        items.add("refresh-ListView");
+        items.add("refresh-GridView");
+        items.add("refresh-ExpandableListView");
+        items.add("refresh-SrcollView");
+        items.add("refresh-WebView");
+        items.add("refresh-ImageView");
+        items.add("refresh-TextView");
         MyAdapter adapter = new MyAdapter(this, items);
         listView.setAdapter(adapter);
         listView.setOnItemLongClickListener(new OnItemLongClickListener() {

@@ -6,13 +6,13 @@
     <include layout="@layout/refresh_head" />
     <!-- 支持所有实现Pullable接口的View -->
 
-    <com.kelly.pulltorefresh.pullableview.PullableTextView
+    <com.kelly.refresh.PullableTextView
         android:id="@+id/content_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
         android:gravity="center"
-        android:text="这是一个match_parent的TextView"
+        android:text="TextView"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold" />

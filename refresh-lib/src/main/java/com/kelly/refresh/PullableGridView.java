@@ -1,4 +1,4 @@
-package com.kelly.pulltorefresh.pullableview;
+package com.kelly.refresh;
 
 import android.content.Context;
 import android.util.AttributeSet;

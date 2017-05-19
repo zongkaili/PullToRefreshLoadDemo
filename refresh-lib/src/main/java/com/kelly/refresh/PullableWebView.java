@@ -1,20 +1,20 @@
-package com.kelly.pulltorefresh.pullableview;
+package com.kelly.refresh;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.ScrollView;
+import android.webkit.WebView;
 
-public class PullableScrollView extends ScrollView implements Pullable {
+public class PullableWebView extends WebView implements Pullable {
 
-    public PullableScrollView(Context context) {
+    public PullableWebView(Context context) {
         super(context);
     }
 
-    public PullableScrollView(Context context, AttributeSet attrs) {
+    public PullableWebView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public PullableScrollView(Context context, AttributeSet attrs, int defStyle) {
+    public PullableWebView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 
@@ -28,10 +28,10 @@ public class PullableScrollView extends ScrollView implements Pullable {
 
     @Override
     public boolean canPullUp() {
-        if (getScrollY() >= (getChildAt(0).getHeight() - getMeasuredHeight()))
+        if (getScrollY() >= getContentHeight() * getScale()
+                - getMeasuredHeight())
             return true;
         else
             return false;
     }
-
 }

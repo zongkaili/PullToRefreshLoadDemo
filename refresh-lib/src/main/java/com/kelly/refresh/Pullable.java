@@ -1,4 +1,4 @@
-package com.kelly.pulltorefresh.pullableview;
+package com.kelly.refresh;
 
 public interface Pullable {
     /**

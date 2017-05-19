@@ -6,7 +6,7 @@
     <include layout="@layout/refresh_head" />
     <!-- 支持所有实现Pullable接口的View -->
 
-    <com.kelly.pulltorefresh.pullableview.PullableScrollView
+    <com.kelly.refresh.PullableScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
@@ -55,7 +55,7 @@
                     android:background="@drawable/m" />
             </LinearLayout>
         </RelativeLayout>
-    </com.kelly.pulltorefresh.pullableview.PullableScrollView>
+    </com.kelly.refresh.PullableScrollView>
 
     <include layout="@layout/load_more" />
 

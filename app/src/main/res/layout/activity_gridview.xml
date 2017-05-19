@@ -6,17 +6,17 @@
     <include layout="@layout/refresh_head" />
     <!-- 支持所有实现Pullable接口的View -->
 
-    <com.kelly.pulltorefresh.pullableview.PullableGridView
+    <com.kelly.refresh.PullableGridView
         android:id="@+id/content_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
         android:columnWidth="90dp"
         android:gravity="center"
-        android:horizontalSpacing="10dp"
+        android:horizontalSpacing="5dp"
         android:numColumns="auto_fit"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="15dp" />
+        android:verticalSpacing="10dp" />
 
     <include layout="@layout/load_more" />
 

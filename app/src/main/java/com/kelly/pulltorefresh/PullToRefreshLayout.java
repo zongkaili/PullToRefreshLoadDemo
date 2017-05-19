@@ -18,7 +18,7 @@ import android.view.animation.RotateAnimation;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.kelly.pulltorefresh.pullableview.Pullable;
+import com.kelly.refresh.Pullable;
 
 
 /**

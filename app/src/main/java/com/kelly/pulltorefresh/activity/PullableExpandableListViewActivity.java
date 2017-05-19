@@ -92,12 +92,12 @@ public class PullableExpandableListViewActivity extends Activity {
             this.context = context;
             groupsStrings = new String[8];
             for (int i = 0; i < groupsStrings.length; i++) {
-                groupsStrings[i] = new String("这里是group " + i);
+                groupsStrings[i] = new String("group " + i);
             }
             groupItems = new String[8][8];
             for (int i = 0; i < groupItems.length; i++)
                 for (int j = 0; j < groupItems[i].length; j++) {
-                    groupItems[i][j] = new String("这里是group " + i + "里的item "
+                    groupItems[i][j] = new String("group " + i + "-->item "
                             + j);
                 }
         }
